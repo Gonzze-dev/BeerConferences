@@ -1,6 +1,10 @@
 # BeerConferences
 Proyecto de conferencia de cervezas en react-native
 
+## Ejecucion
+Este proyecto usa el sdk v51 de expo
+init: npm start
+
 ## 01
 # Requerimientos
 Crear una app móvil para ver conferencias de un evento de cerveceros artesanales.
