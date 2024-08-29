@@ -2,8 +2,8 @@
 Proyecto de conferencia de cervezas en react-native
 
 ## Ejecucion
-Este proyecto usa el sdk v51 de expo
-init: npm start
+Este proyecto usa el sdk v51 de expo.
+Para ejecutar el proyecto, usar el comando `npm start`.
 
 ## 01
 # Requerimientos
