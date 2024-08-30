@@ -38,7 +38,7 @@ const Detail = () => {
       </View>
 
       <TextUI fontSize={16} moreStyles={styles.speackerContainer}>Organizador: <TextUI color="black" fontFamily="roboto-medium">{conference.speacker}</TextUI> </TextUI>
-      <TextUI moreStyles={styles.description}>{conference.name}</TextUI>
+      <TextUI moreStyles={styles.description}>{conference.description}</TextUI>
 
       <View style={styles.locationContainer}>
         <TextUI><ImageUI size={30} img={locationPNG}/> {conference.city}</TextUI>
@@ -46,7 +46,6 @@ const Detail = () => {
             lat={conference.ubication._lat}
             long={conference.ubication._long}
             name={conference.name}
-            des={conference.name}
           />
       </View>
       
