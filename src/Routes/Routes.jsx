@@ -1,6 +1,5 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator, CardStyleInterpolators  } from "@react-navigation/stack";
-import { Pressable, StyleSheet } from "react-native";
 
 //Components Views
 import MapMainConferences from "../Views/MapMainConferences";
