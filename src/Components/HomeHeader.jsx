@@ -3,7 +3,6 @@ import {
   View,
   StyleSheet,
   TextInput,
-  Pressable,
 } from "react-native";
 
 //UI
@@ -13,12 +12,11 @@ import ImageUI from "../UI/ImageUI";
 import beer from "../assets/Images/beer.png"
 
 //Funciones y hooks
-import { useNavigation } from "@react-navigation/native";
 import searchSvg from '../assets/icons/search.png'
 
 
-const Header = ({ onSearch }) => {
-  const { navigate } = useNavigation();
+const HomeHeader = ({ onSearch }) => {
+  
   return (
     <View style={styles.container}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -27,13 +25,6 @@ const Header = ({ onSearch }) => {
             Beer<TextUI fontSize={32} fontFamily='impact'>conf</TextUI>
         </TextUI>
       </View>
-      
-      <Pressable
-        style={styles.myAcc}
-        onPress={() => navigate("Account")}
-      >
-        <TextUI >Mi cuenta</TextUI>
-      </Pressable>
 
       <View style={styles.inputContainer}>
         <ImageUI
@@ -59,13 +50,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#FDB515",
     alignItems: "center",
     paddingTop: 25,
+    position: 'relative'
   },
-  myAcc: {
-    width: "100%",
-    paddingVertical: 10,
-    paddingHorizontal: 10,
-    alignItems: "flex-end",
-  },
+  
   inputContainer: {
     flexDirection: "row",
     alignItems: "center",
@@ -74,7 +61,7 @@ const styles = StyleSheet.create({
     height: 55,
     borderRadius: 25,
     paddingHorizontal: 16,
-    top: -5,
+    top: 40,
   },
   searchInput: {
     flex: 1,
@@ -85,4 +72,4 @@ const styles = StyleSheet.create({
   
 });
 
-export default Header;
+export default HomeHeader;

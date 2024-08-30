@@ -1,5 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator, CardStyleInterpolators  } from "@react-navigation/stack";
+import { Pressable, StyleSheet } from "react-native";
 
 //Components Views
 import MapMainConferences from "../Views/MapMainConferences";
@@ -9,6 +10,7 @@ import { Home } from "../Views/Home";
 import Detail from "../Views/Detail";
 import { Account } from "../Views/Account";
 import ForgotPassword from "../Views/ForgotPassword";
+import MyAcc from "../Components/MyAcc";
 
 const Stack = createStackNavigator();
 const routeScreenDefaultOptions = {
@@ -18,12 +20,11 @@ const routeScreenDefaultOptions = {
   headerTitleStyle: {
     color: "#fff",
   },
-  headerTintColor: "#fff",
-  borderBottomWidth: 1,
-  borderColor: 'red',
+
 };
 
 const Routes = () => {
+  
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
@@ -49,6 +50,7 @@ const Routes = () => {
           component={Home}
           options={{gestureEnabled: false, 
             headerLeft: () => null,
+            headerRight: () => <MyAcc/>,
             ...routeScreenDefaultOptions}}
         />
         <Stack.Screen
@@ -72,5 +74,7 @@ const Routes = () => {
     </NavigationContainer>
   );
 };
+
+
 
 export default Routes;

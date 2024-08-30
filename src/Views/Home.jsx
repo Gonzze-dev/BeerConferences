@@ -1,6 +1,6 @@
 //Componentes
 import { View, StyleSheet, Text, Pressable, Alert } from "react-native";
-import Header from "../Components/Header";
+import HomeHeader from "../Components/HomeHeader";
 import ListCardsEvents from "../Components/ListCardsEvents";
 
 //UI
@@ -45,7 +45,7 @@ export const Home = () => {
         <LoadingIndicator/>
         :
         <>
-          <Header onSearch={handleSearch} />
+          <HomeHeader onSearch={handleSearch} />
           <View style={styles.ButtonMapContainer}>
             <Pressable
               style={styles.ButtonMap}
