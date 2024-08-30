@@ -1,5 +1,5 @@
 //Components
-import { View, Text, StyleSheet, Pressable, Alert } from "react-native";
+import { View, Text, StyleSheet, Pressable } from "react-native";
 
 //UI
 import ImageUI from "../UI/ImageUI";

@@ -28,17 +28,6 @@ export const Account = () => {
   const {navigate, reset} = useNavigation();
 
   useEffect(() => {
-    const handleBackButton = () => {
-      return true;
-    };
-
-    BackHandler.addEventListener("hardwareBackPress", handleBackButton);
-
-    return () => {
-      BackHandler.removeEventListener("hardwareBackPress", handleBackButton);
-    };
-  }, []);
-  useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         setUser(authUser);

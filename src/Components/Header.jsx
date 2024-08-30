@@ -3,7 +3,6 @@ import {
   View,
   StyleSheet,
   TextInput,
-  Image,
   Pressable,
 } from "react-native";
 

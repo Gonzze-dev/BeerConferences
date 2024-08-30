@@ -1,4 +1,4 @@
-import { StyleSheet, Text, Image } from 'react-native'
+import { StyleSheet, Image } from 'react-native'
 import React from 'react'
 
 function ImageUI ({size=30,

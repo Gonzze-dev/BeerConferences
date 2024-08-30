@@ -12,8 +12,6 @@ import ButtonUI from "../UI/ButtonUI";
 import InputUI from "../UI/InputUI";
 import TextUI from "../UI/TextUI";
 
-import beer from "../assets/Images/beer.png"
-
 // Funciones
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../FB/Firebase";

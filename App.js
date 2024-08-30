@@ -13,7 +13,7 @@ export default function App() {
         await loadAsync({
             "roboto-black": require('./src/assets/fonts/Roboto/Roboto-Black.ttf'),
             "roboto-bold": require('./src/assets/fonts/Roboto/Roboto-Bold.ttf'),
-            "roboto-medium": require('./src/assets/fonts/Roboto/Roboto-Regular.ttf'),
+            "roboto-medium": require('./src/assets/fonts/Roboto/Roboto-Medium.ttf'),
             "impact": require('./src/assets/fonts/Impact/Impact.ttf')
         })
         setLoadingFonts(true)
