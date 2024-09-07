@@ -13,6 +13,16 @@ Ejecutar el script `set_host_devise_ip_windows` con el siguiente comando
 ```
 para setear el puerto Ethernet a una variable de entorno, esto se debe a que el docker-compose hace uso de la misma.
 
+luego usar
+Primera vez
+```
+docker-compose up --build
+```
+Segunda vez
+```
+docker-compose up
+```
+
 ## Ejecucion con docker unix (mac y linux)
 para mac
 ```
