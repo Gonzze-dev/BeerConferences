@@ -23,6 +23,16 @@ para linux
 chmod +x set_host_devise_ip_linux.sh
 ```
 
+luego usar
+Primera vez
+```
+docker-compose up --build
+```
+Segunda vez
+```
+docker-compose up
+```
+
 ## 01
 # Requerimientos
 Crear una app móvil para ver conferencias de un evento de cerveceros artesanales.
