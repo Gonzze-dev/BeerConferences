@@ -26,6 +26,7 @@
     "web": {
       "favicon": "./assets/app.png"
     },
+    "host": "lan",
     "plugins": [
       "expo-font"
     ]

@@ -1,9 +1,27 @@
 # BeerConferences
 Proyecto de conferencia de cervezas en react-native
 
-## Ejecucion
+## Ejecucion sin docker
 Este proyecto usa el sdk v51 de expo.
 Para ejecutar el proyecto, usar el comando `npm start`.
+
+## Ejecucion con docker windows
+Ejecutar el script `set_host_devise_ip_windows` con el siguiente comando
+(se necesita hacerlo en powershell)
+```
+./set_host_devise_ip.ps1
+```
+para setear el puerto Ethernet a una variable de entorno, esto se debe a que el docker-compose hace uso de la misma.
+
+## Ejecucion con docker unix (mac y linux)
+para mac
+```
+chmod +x set_host_devise_ip_macOS.sh
+```
+para linux
+```
+chmod +x set_host_devise_ip_linux.sh
+```
 
 ## 01
 # Requerimientos

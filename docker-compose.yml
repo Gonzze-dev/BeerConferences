@@ -1,0 +1,16 @@
+version: '2.29'
+services:
+  app:
+    container_name: beersconferencesapp
+    build: .
+    ports:
+      - '19000:19000'
+      - '19001:19001'
+      - '19002:19002'
+      - '19003:19003'
+    environment:
+      - REACT_NATIVE_PACKAGER_HOSTNAME=${HOST_DEVICE_IP}
+    volumes:
+      - .:/app
+    tty: true
+    
