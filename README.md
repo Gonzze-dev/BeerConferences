@@ -3,7 +3,8 @@ Proyecto de conferencia de cervezas en react-native
 
 ## Ejecucion sin docker
 Este proyecto usa el sdk v51 de expo.
-Para ejecutar el proyecto, usar el comando `npm start`.
+1-Para ejecutar el proyecto, usar el comando `npm start`.
+2-Escanear el QR que se mostrara en consola, o introducir la direccion que otorga metro.
 
 ## Ejecucion con docker windows
 Ejecutar el script `set_host_devise_ip_windows` con el siguiente comando
